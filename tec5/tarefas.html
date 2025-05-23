@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="en"> <!-- Início do documento HTML com o idioma definido como inglês -->
+<head> <!-- Início da seção de cabeçalho da página (metadados) -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante responsividade em dispositivos móveis -->
+    <title>TAREFAS</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="./src/css/tarefas.css"> <!-- Importa o arquivo CSS de estilos para tarefas -->
+    <link rel="stylesheet" href="./src/css/header.css"> <!-- Importa o arquivo CSS para o cabeçalho -->
+</head>
+<body class="as"> <!-- Início do corpo da página -->
+     <header> <!-- Início da seção de cabeçalho visível da página -->
+        <div id="topInfo"> <!-- Div que contém informações do topo como o logo -->
+            <img src="./src/img/PucLogo.png" alt="PucLogo" id="logo"> <!-- Exibe o logo com alt text "PucLogo" e id "logo" -->
+
+            <div>
+                <!-- Div vazia, possivelmente usada para adicionar mais informações ou estrutura futuramente -->
+            </div>
+        </div>
+        <nav> <!-- Seção de navegação com links para outras páginas -->
+            <a href="index.html">HOME</a> <!-- Link para a página inicial -->
+            <a href="sobre.html">SOBRE</a> <!-- Link para a página "Sobre" -->
+            <a href="tarefas.html">PROJETOS</a> <!-- Link para a página atual (Projetos) -->
+        </nav>
+    </header>
+    <main> <!-- Início da área principal do conteúdo -->
+        <button id="criarProjetoBotao" onclick="create()">CRIAR PROJETO</button> <!-- Botão que chama a função 'create()' ao ser clicado -->
+        <div class="criarProjeto"> <!-- Container para o formulário de criação de projeto -->
+            <form action="criarProjeto"> <!-- Formulário com ação "criarProjeto"-->
+                <input type="text" name="nome" id="nomeProj"> <!-- Campo de entrada de texto para o nome do projeto -->
+            </form>
+            <div id="projetos"></div> <!-- Div que exibirá os projetos criados dinamicamente -->
+        </div> <!-- Fim do container de criação de projeto -->
+    </main>
+
+    <script src="./src/js/tarefas.js"></script> <!-- Importa o arquivo JavaScript com funcionalidades da página -->
+</body>
+</html>
